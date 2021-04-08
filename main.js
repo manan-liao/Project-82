@@ -5,7 +5,7 @@ mouseEvent = "empty";
 var last_x,last_y;
 color = "black";
 lineWidth = 1;
-raduis = 40;
+raduis = 20;
 
 canvas.addEventListener("mousedown",my_mousedown);
 function my_mousedown(e){
@@ -30,7 +30,6 @@ function my_mousemove(e){
         ctx.beginPath();
         ctx.strokeStyle = color;
         ctx.lineWidth = lineWidth;
-        ctx.raduis = raduis;
         ctx.arc(current_x,current_y,raduis,0, 2*Math.PI);
         ctx.stroke();
     }
